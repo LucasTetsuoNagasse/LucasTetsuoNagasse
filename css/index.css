@@ -1,0 +1,45 @@
+:root {
+  --background-color: #000007ff;
+  --secondary-color: #101017ff;
+  --text-color: #fffffdff;
+
+  font-size: 1rem;
+}
+
+body, body *:not(script) {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  outline: none;
+  outline-offset: 1px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font: 1rem Arial;
+}
+
+body {
+  align-items: stretch;
+  background-color: var(--background-color);
+  height: 100dvh;
+  color: var(--text-color);
+
+  & h1 {
+    font-size: 2rem;
+  }
+
+  & > main {
+    justify-content: start;
+    flex: 1;
+    padding: 2rem;
+    
+    & > div.title {
+      border-radius: 0.3rem;
+      padding: 1em;
+      background-color: var(--secondary-color);
+    }
+  }
+}
